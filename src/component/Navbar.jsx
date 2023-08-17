@@ -7,7 +7,7 @@ const Navbar = () => {
   const [user] = useAuthState(Auth);
   return (
     <div className="bg-black flex justify-between px-[10px] items-center w-full min-h-[50px] text-white">
-      <header className="text-[25px] font-bold flex items-center">we chat
+      <header className="text-[25px] font-bold flex items-center">we Chat
     {  user &&
       <img className="ml-4 w-[30px] shadow-lg border-[2px] rounded-[50%]  border-green-600 outline-offset-2" src={Auth.currentUser.photoURL} alt={user.displayName} />
       }
